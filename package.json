@@ -1,0 +1,40 @@
+{
+  "name": "shaka-packager-static",
+  "version": "2.3.0",
+  "description": "Shaka Packager static binaries for Mac OSX and Linux and Windows",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "bin"
+  ],
+  "scripts": {
+    "build": "./build/index.sh",
+    "test": "node_modules/.bin/tape test/*.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feedsbrain/shaka-packager-static"
+  },
+  "keywords": [
+    "shaka",
+    "packager",
+    "shaka-packager",
+    "static",
+    "library",
+    "binary",
+    "binaries",
+    "mac",
+    "linux",
+    "windows"
+  ],
+  "author": "Indra Gunawan <feedsbrain@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/feedsbrain/shaka-packager-static/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.10.1"
+  }
+}
