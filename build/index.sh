@@ -1,12 +1,8 @@
 #!/bin/sh
-set VERSION=2.3.0
 set +e
 cd $(dirname $0)
 
-tar_exec=$(command -v gtar)
-if [ $? -ne 0 ]; then
-	tar_exec=$(command -v tar)
-fi
+VERSION=2.3.0
 
 download () {
 	curl -L -# -A 'https://github.com/feedsbrain/shaka-packager-static' -o $2 $1
