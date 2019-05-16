@@ -23,7 +23,7 @@ Returns the path of a statically linked packager binary on the local filesystem.
 ``` js
 var packager = require('shaka-packager-static');
 console.log(packager.path);
-// /home/feedsbrain/workspaces/cool-project/node_modules/shaka-packager-static/bin/linux/x64/ffmpeg
+// /home/feedsbrain/workspaces/cool-project/node_modules/shaka-packager-static/bin/linux/x64/packager
 ```
 
 ## Sources of the binaries
