@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/feedsbrain/shaka-packager-static.svg?branch=master)](https://travis-ci.org/feedsbrain/shaka-packager-static)
 
-**[Shaka Packager](https://github.com/google/shaka-packager) static binaries for Mac OSX and Linux and Windows.**
+**[Shaka Packager](https://github.com/google/shaka-packager) static binaries for Mac OSX, Linux and Windows.**
 
 Supports macOS (64-bit), Linux (32 and 64-bit) and Windows (32 and 64-bit). The current shaka-packager version is `2.3.0`.
 
