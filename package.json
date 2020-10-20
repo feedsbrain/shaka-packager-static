@@ -1,6 +1,6 @@
 {
   "name": "shaka-packager-static",
-  "version": "2.3.2",
+  "version": "2.4.3",
   "description": "Shaka Packager static binaries for Mac OSX, Linux and Windows",
   "main": "index.js",
   "files": [
@@ -35,6 +35,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tape": "^4.10.1"
+    "tape": "^5.0.1"
   }
 }
