@@ -2,7 +2,7 @@
 set +e
 cd $(dirname $0)
 
-VERSION=2.3.0
+VERSION=2.4.3
 
 download () {
 	curl -L -# -A 'https://github.com/feedsbrain/shaka-packager-static' -o $2 $1
