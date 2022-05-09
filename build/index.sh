@@ -2,7 +2,7 @@
 set +e
 cd $(dirname $0)
 
-VERSION=2.4.3
+VERSION=2.6.1
 
 download () {
 	curl -L -# -A 'https://github.com/feedsbrain/shaka-packager-static' -o $2 $1
@@ -10,19 +10,11 @@ download () {
 
 echo 'Windows x64'
 echo '  downloading from https://github.com/google/shaka-packager/releases'
-download 'https://github.com/google/shaka-packager/releases/download/v'$VERSION'/packager-win.exe' ../bin/win32/x64/packager.exe
-
-echo 'Windows ia32'
-echo '  downloading from https://github.com/google/shaka-packager/releases'
-download 'https://github.com/google/shaka-packager/releases/download/v'$VERSION'/packager-win.exe' ../bin/win32/ia32/packager.exe
+download 'https://github.com/google/shaka-packager/releases/download/v'$VERSION'/packager-win.exe' ../bin/windows/x64/packager.exe
 
 echo 'Linux x64'
 echo '  downloading from https://github.com/google/shaka-packager/releases'
 download 'https://github.com/google/shaka-packager/releases/download/v'$VERSION'/packager-linux' ../bin/linux/x64/packager
-
-echo 'Linux ia32'
-echo '  downloading from https://github.com/google/shaka-packager/releases'
-download 'https://github.com/google/shaka-packager/releases/download/v'$VERSION'/packager-linux' ../bin/linux/ia32/packager
 
 echo 'Darwin x64'
 echo '  downloading from https://github.com/google/shaka-packager/releases'
